@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="blood_don.css">
+    <title>Blood Donation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="blood_jq.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
+
+</head>
+
+<body>
+    <header class="header-area overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="logo.png" alt="Blood" style="height: 30px;width: 24px;">
+                    Donorox</a>
+
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#" class="nav-item nav-link active"><i class="fas fa-tachometer-alt"></i>Home</a>
+                        </li>
+                        <li><a href="#" class="nav-item nav-link">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-item nav-link" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item"><i class="fa fa-address-book" aria-hidden="true"></i>
+                                    Book an appointment</a>
+                                <a href="#" class="dropdown-item"><i class="fa fa-medkit" aria-hidden="true"></i>
+                                    Emergency Helpline</a>
+                                <a href="#" class="dropdown-item"><i class="fa fa-plus" aria-hidden="true"></i> More</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-item nav-link" data-toggle="dropdown" style="cursor: pointer;">Portfolio</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item"><i class="fa fa-user" aria-hidden="true"></i> Your
+                                    Account</a>
+                                <a href="#" class="dropdown-item"><i class="fa fa-user-md" aria-hidden="true"></i>
+                                    Doctor's List</a>
+                                <a href="#" class="dropdown-item"><i class="far fa-calendar-alt"></i> Calendar</a>
+                                <a href="#reqst" class="dropdown-item"><i class="fa fa-rocket" aria-hidden="true"></i>
+                                    Requests</a>
+                                <a href="#" class="dropdown-item"><i class="fa fa-question-circle"
+                                        aria-hidden="true"></i> FAQ</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="container">
+                <h1>Health Care Center</h1>
+                <p>Your Donation can bring smile at others face. Blood Donors are the real Heroes. Join with us and Save
+                    lives Become a life Saver!</p>
+                <a href="#form" class="button button-primary">Donate Now</a>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <br>
+    <main>
+        <div class="containers" id="form">
+            <form method="POST">
+                <legend>
+                    <h1 id="h1">Donation Form</h1>
+                    <h3>Donate Blood - Save Life! Donating blood is a very precious work for a human being.</h3>
+                </legend>
+                <div class="row">
+                    <h4>First Name:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Full Name" required />
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                    <h4>Last Name:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="last name" required />
+                        <div class="input-icon"><i class="fa fa-user"></i></i></div>
+                    </div>
+                    <h4>Doctor's Name:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Dr." required />
+                        <div class="input-icon"><i class="fa fa-user-md" aria-hidden="true"></i>
+                        </div>
+                        <h4>Doctor's Approval Code:*</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="text" placeholder="" required />
+                            <div class="input-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <h4>Age:</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="number" placeholder="18" min="18" max="50" />
+                            <div class="input-icon"><i class="fa fa-male" aria-hidden="true"></i></div>
+                        </div>
+                        <h4>Blood Group:*</h4>
+                        <div class="input-group input-group-icon">
+                            <div class="input-group"> <i class="fa fa-tint" aria-hidden="true"></i>
+                                <select name="department" class="form-control selectpicker" required>
+                                    <option value="">Select your Blood Group</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h4>Phone No:*</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="number" placeholder="(+91)" required />
+                            <div class="input-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>Terms and Conditions</h4>
+                        <div class="input-group">
+                            <input id="terms" type="checkbox" />
+                            <label for="terms" style="color: azure;">I accept the terms and conditions for signing up to
+                                this service, and
+                                hereby
+                                confirm I have read the privacy policy.</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary mb-2">Donate</button>
+            </form>
+        </div>
+    </main>
+    <br><br>
+    <main>
+        <div class="containers" id="reqst">
+            <form method="POST">
+                <legend>
+                    <h1 id="h1">Request Donation:</h1>
+                    <h3>Filling the * marked entries is Compulsary.</h3>
+                </legend>
+                <div class="row">
+                    <h4>Patient's First Name:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Full Name" required />
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                    <h4>Patient's Last Name:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="last name" required />
+                        <div class="input-icon"><i class="fa fa-user"></i></i></div>
+                    </div>
+                    <h4>Problem:*</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Dr." required />
+                        <div class="input-icon"><i class="fa fa-user-md" aria-hidden="true"></i>
+                        </div>
+                        <h4>Sex:*</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <div class="input-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <h4>Age:</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="number" placeholder="18" min="18" max="50" />
+                            <div class="input-icon"><i class="fa fa-male" aria-hidden="true"></i></div>
+                        </div>
+                        <h4>Blood Group:*</h4>
+                        <div class="input-group input-group-icon">
+                            <div class="input-group"> <i class="fa fa-tint" aria-hidden="true"></i>
+                                <select name="department" class="form-control selectpicker" required>
+                                    <option value="">Select your Blood Group</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h4>Charges:*</h4>
+                        <div class="input-group input-group-icon">
+                            <input type="number" placeholder="Rs." required />
+                            <div class="input-icon"><i class="fa fa-credit-card" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h4>Terms and Conditions</h4>
+                            <div class="input-group">
+                                <input id="terms" type="checkbox" />
+                                <label for="terms" style="color: azure;">I accept the terms and conditions for signing
+                                    up to
+                                    this service, and
+                                    hereby
+                                    confirm I have read the privacy policy.</label>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary mb-2">Confirm Request</button>
+            </form>
+        </div>
+    </main>
+</body>
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://www.google.co.in/"> Arkaraj</a>
+    </div>
+</footer>
+
+</html>
